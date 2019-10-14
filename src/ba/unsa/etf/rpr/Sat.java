@@ -27,23 +27,23 @@ public class Sat {
 		else for (int i=0; i<-pomak; i++) prethodni();
     }
 
-    final int dajSate() { return sati; }
-    final int dajMinute() { return minute; }
-    final int dajSekunde() { return sekunde; }
+    final int DAJ_SATE() { return sati; }
+    final int DAJ_MINUTE() { return minute; }
+    final int DAJ_SEKUNDE() { return sekunde; }
 
-    final void ispisi() {
+    final void ISPISI() {
         System.out.println(sati + ":" + minute + ":" + sekunde);
     }
 
     public static void main(String[] args) {
         Sat s = new Sat(15,30,45);
-        s.ispisi();
+        s.ISPISI();
         s.sljedeci();
-        s.ispisi();
+        s.ISPISI();
         s.pomjeriZa(-48);
-        s.ispisi();
+        s.ISPISI();
         s.postavi(0,0,0);
-        s.ispisi();
+        s.ISPISI();
 
 
     }
